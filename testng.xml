@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="automationpractice">
+  <!--  <test name="Home page">
+  	<classes>
+  		<class name="com.live.test.HomePageTest"/>
+  	</classes>
+  </test> -->
+    
+  <test name="Login Page">
+  	<groups>
+		<run>
+			<include name="needed"/>
+		</run>
+	</groups>
+  	<classes>
+  		<class name="com.live.test.LoginPageTest"/>
+  	</classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->
