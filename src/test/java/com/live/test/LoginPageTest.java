@@ -66,7 +66,7 @@ public class LoginPageTest extends Base{
 		report.flush();
 	}
 	
-	@Test(enabled=false)
+	@Test(priority=5,enabled=false)
 	public void correctEmailWrongPasswordTest(){
 		logger=report.createTest("corret email - wrong password");
 		logger.info("Before - Login attempt with correct username and wrong password");
@@ -76,7 +76,7 @@ public class LoginPageTest extends Base{
 		report.flush();
 	}
 	
-	@Test(enabled=false)
+	@Test(priority=6,enabled=false)
 	public void correctEmailCorrectPasswordTest(){
 		SoftAssert softAssert = new SoftAssert();
 		logger=report.createTest("corret email - correct password");
