@@ -28,25 +28,21 @@ public class LoginPageTest extends Base{
 		
 	@Test(priority=1,groups={"needed"},enabled=true)
 	public void noEmailPasswordTest(){
-//		System.out.println("noEmailPasswordTest() - start");
 		logger=report.createTest("empty email - password");
 		logger.info("Before - Login attempt with empty username and password");
 		Reporter.log("Login attempt with empty username and password", true);
 		Assert.assertTrue(loginPage.noEmailPassword().contains("email address required"), "Error message not matched");
-//		System.out.println("noEmailPasswordTest() - end");
 		logger.info("After - Login attempt with empty username and password");
 		report.flush();
 	}
 	
 	@Test(priority=2,groups={"needed"},enabled=false)
 	public void wrongEmailtype1EmptyPasswordTest(){
-//		System.out.println("wrongEmailtype1EmptyPasswordTest() - start");
 		logger=report.createTest("wrong email - empty password");
 		logger.info("Before - Login attempt with wrong username (eg: username) and empty password");
 		Reporter.log("Login attempt with wrong username (eg: username) and empty password", true);
 		Assert.assertTrue(loginPage.wrongEmail1EmptyPassword().contains("Invalid email address"), "Error message not matched");
 		logger.info("After - Login attempt with wrong username (eg: username) and empty password");
-//		System.out.println("wrongEmailtype1EmptyPasswordTest() - end");
 		report.flush();
 	}
 	
