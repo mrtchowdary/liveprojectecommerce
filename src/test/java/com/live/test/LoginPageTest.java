@@ -26,7 +26,7 @@ public class LoginPageTest extends Base{
 		System.out.println("setUp - login - after isAuthenticationScreen()");
 	}
 		
-	@Test(priority=1,groups={"needed"},enabled=true)
+	@Test(priority=1,groups={"needed"},enabled=false)
 	public void noEmailPasswordTest(){
 		logger=report.createTest("empty email - password");
 		logger.info("Before - Login attempt with empty username and password");
